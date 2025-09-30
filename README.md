@@ -1,4 +1,4 @@
-# Listen_in_Space
+# Listen in Space
 
 "Listen in Space" is a game focused on early childhood education. The goal is to help children learn English in a fun way.
 
