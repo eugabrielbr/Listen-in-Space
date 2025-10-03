@@ -1,0 +1,18 @@
+# Godot specific files
+.godot/
+export/
+*.import
+*.translation
+*.backup
+*.tres.converted
+*.tscn.converted
+
+# Platform specific files
+.DS_Store # macOS
+Thumbs.db # Windows
+desktop.ini # Windows
+
+# External tools and build artifacts
+build/
+bin/
+addons/*/build/

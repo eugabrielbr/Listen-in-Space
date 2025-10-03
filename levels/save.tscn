@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://mvktmjjkiu86"]
+
+[ext_resource type="Texture2D" uid="uid://usgx8qe0wkkf" path="res://assets/astro/astro first version.png" id="1_0m102"]
+[ext_resource type="Script" uid="uid://csufducxk3gjv" path="res://scripts/astro.gd" id="1_2y24v"]
+[ext_resource type="Texture2D" uid="uid://cy1ivho57e1co" path="res://assets/astro/astro closed eyes.png" id="2_2y24v"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_02xe8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0m102")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2y24v")
+}],
+"loop": true,
+"name": &"indle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xv4fl"]
+radius = 30.0
+height = 90.0
+
+[node name="Space-01" type="Node2D"]
+
+[node name="Astro" type="CharacterBody2D" parent="."]
+script = ExtResource("1_2y24v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Astro"]
+position = Vector2(398, 160)
+scale = Vector2(0.074369, 0.0683556)
+sprite_frames = SubResource("SpriteFrames_02xe8")
+animation = &"indle"
+frame = 1
+frame_progress = 0.248903
+speed_scale = 0.1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Astro"]
+position = Vector2(399, 160)
+shape = SubResource("CapsuleShape2D_xv4fl")
