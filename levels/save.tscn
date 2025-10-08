@@ -32,8 +32,7 @@ position = Vector2(398, 160)
 scale = Vector2(0.074369, 0.0683556)
 sprite_frames = SubResource("SpriteFrames_02xe8")
 animation = &"indle"
-frame = 1
-frame_progress = 0.248903
+frame_progress = 0.364385
 speed_scale = 0.1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Astro"]
